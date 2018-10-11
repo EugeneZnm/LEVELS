@@ -41,3 +41,16 @@ class Profile(models.Model):
         """
         instance.profile.save()
 
+
+# adding the project profile
+class Project(models.Model):
+    """
+    Image model creating table
+    """
+    image = models.ImageField(upload_to='media', blank=True)
+    image2 = models.ImageField(upload_to='media', blank=True)
+    image3 = models.ImageField(upload_to='media', blank=True)
+    project_name = models.CharField(max_length=200)
+    caption = models.CharField(max_length=1000)
+    profile = models.ForeignKey(Profile, on_delete=models.CASCADE, null=True)
+    user = models.ForeignKey(User , on_delete=models.CASCADE, default=True)
