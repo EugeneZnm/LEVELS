@@ -22,3 +22,22 @@ class Profile(models.Model):
 
     def __str__(self):
         return self.user.username
+
+    # sender is source of signal
+    @receiver(post_save, sender=User)
+    def create_profile(sender, instance, created, **kwargs):
+        """
+        method to create profile
+        :return:
+        """
+        if created:
+            Profile.objects.create(user=instance)
+
+    @receiver(post_save, sender=User)
+    def save_user_profile(sender, instance, **kwargs):
+        """
+        method to save profile
+        :return:
+        """
+        instance.profile.save()
+
