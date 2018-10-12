@@ -29,7 +29,7 @@ class EditProfileForm(forms.ModelForm):
     """
     class Meta:
         model = Profile
-        fields = ['image', 'image2', 'image3', 'project_name', 'caption', 'description']
+        fields = ['avatar', 'Bio', 'location', 'phone_number']
 
 
 # form for uploading new project

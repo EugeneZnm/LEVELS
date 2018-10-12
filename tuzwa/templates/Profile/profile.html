@@ -1,10 +1,66 @@
 <!DOCTYPE html>
+{% extends 'base.html' %}
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>PROFILE</title>
 </head>
 <body>
 
+    {% block content %}
+    <div class="row">
+        <div class="col-md-9">
+            <div class="row container jumbotron " style="width: 700px; height: 350px; position: relative; left: 33%; background-color: cream !important;">
+                <div class="col-md-4">
+                    <div class="card-body" style="position: relative; top: -20%; ">
+                        {% if profile.avatar %}
+                        <img  style="width: 200px;" src="{{ profile.avatar.url }}" alt="card image cap">
+                        {% else %}
+                     <div >
+                        <img style="width: 200px;" src="https://www.w3schools.com/howto/img_avatar.png" alt="card image cap">
+                     </div>
+
+                        {% endif %}
+                        <div class="card-footer" style="width: 200px; background-color: white;">
+                            <h5 style="text-align: center; color:black; background-color: white;" class="card-title">{{user.username}}</h5>
+                        </div>
+                    </div>
+                </div>
+                 <div class="col-md-8" style="position: relative; top: -20%;">
+                    <div class="card-body" style="text-align: center;">
+                        <h5 class="card-title" style="color: black;">Email: {{user.email}}</h5>
+                        <h5 class="card-title" style="color: black;">Bio:   {{profile.Bio}}</h5>
+                        <h5 class="card-title" style="color: black;">Phone: {{profile.phone_number}}</h5>
+                        <h5 class="card-title" style="color: black;">Location: {{profile.location}}</h5>
+                        <a class="nav-link btn btn-danger" href="{% url 'edit_profile' %}" style="width: 110px; margin-left: 8em; text-align: center;">Edit Profile</a></br>
+                        <a class="nav-link btn btn-warning" href="{% url 'new_image' %}" style="width: 130px; margin-left: 7.5em; text-align: center;">Upload Image</a>
+                    </div>
+                </div>
+                <div>
+                    {% for projects in project%}
+                     <ul style="margin-left: 6.5em;">
+                        <li style="display:inline;">
+                            <h5 class="card-header" style="width:30rem; text-align: center; background-color: grey; color: white;">{{images.profile}}</h5>
+                            <a href="#"><img class="card-img-top" style="height: 25rem; width:30rem;" src="{{projects.image.url}}" alt="card image cap" data-toggle="modal" data-target="#exampleModal"></a>
+                            <div class="card-body" style="width:30rem;background-color: grey; color: white;">
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <h5 style="text-align: center;" class="card-title">{{projects.project_name}}</h5>
+                                    </div>
+                                    <div class="col-md-12">
+                                        <h5 style="text-align: center;" class="card-title">Category:{{projects.caption}}</h5>
+                                    </div>
+                                    <div class="col-md-12">
+                                        <h5 style="text-align: center;" class="card-title">Category:{{projects.description}}</h5>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                     {% endfor %}
+                </div>
+            </div>
+        </div>
+    </div>
+    {% endblock %}
 </body>
-</html>
