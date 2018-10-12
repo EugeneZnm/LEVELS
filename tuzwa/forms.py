@@ -40,3 +40,43 @@ class UploadProjectForm(forms.ModelForm):
     class Meta:
         model = Project
         fields = ['image','image2', 'image3', 'project_name', 'caption', 'description']
+
+
+# form for voting for  design
+class DesignForm(forms.ModelForm):
+    """
+    Vote fon design
+    """
+    class Meta:
+        model = Design
+        fields = ['design_score']
+
+
+# voting on Usability
+class UsabilityForm(forms.ModelForm):
+    """
+    Vote fon design
+    """
+    class Meta:
+        model = Design
+        fields = ['usability_score']
+
+
+# voting on Usability
+class CreativityForm(forms.ModelForm):
+    """
+    Vote fon design
+    """
+    class Meta:
+        model = Design
+        fields = ['creativity_score']
+
+
+# voting on Content
+class ContentForm(forms.ModelForm):
+    """
+    Vote fon design
+    """
+    class Meta:
+        model = Design
+        fields = ['content_score']
