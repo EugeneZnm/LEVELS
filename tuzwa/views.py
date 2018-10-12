@@ -1,4 +1,3 @@
-from django.shortcuts import render
 from django.shortcuts import render, redirect, get_object_or_404
 
 # importing login as auth_login to prevent clashing with inbuilt view
@@ -9,11 +8,10 @@ from django.contrib.auth.decorators import login_required
 from django.contrib.auth.models import User
 
 # import forms
-from .forms import SignUpForm, EditProfileForm, UploadProjectForm
+from .forms import SignUpForm, EditProfileForm, UploadProjectForm,VoteForm
 
 # importation of model classes
-from .models import Project,Profile, Design, Content, Creativity, Usability
-
+from .models import Project,Profile, Votes
 # Create your views here.
 
 
@@ -103,13 +101,27 @@ def single_project(request, project_id):
     # view function for single project
     projects = Project.single_project(project_id)
 
-    # voting citeria
+    # voting criteria
+    vote = Votes.objects.all()
 
-    design = Design.objects.all()
-    usability = Usability.objects.all()
-    creativity = Creativity.objects.all()
-    content = Content.objects.all()
+    # design = Design.objects.all()
+    # usability = Usability.objects.all()
+    # creativity = Creativity.objects.all()
+    # content = Content.objects.all()
 
-    return render(request, 'Profile/single-project.html', {"projects": projects, "project_id": project_id, 'usability':usability, 'design':design, 'creativity':creativity, 'content':content })
+    return render(request, 'Profile/single-project.html', {"projects": projects, "project_id": project_id, 'vote': vote})
 
 
+# criteria voting function
+@login_required(login_url='/registration/login/')
+def votes(request, project_id):
+
+    projects = get_object_or_404(Project, pk=project_id)
+    if request.method == 'POST':
+        form = VoteForm(request.POST)
+        if form.is_valid():
+            vote = form.save(commit=False)
+            vote.user = request.user
+            vote.project = projects
+            vote.save()
+        return redirect('profile')
