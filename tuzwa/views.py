@@ -74,12 +74,7 @@ def profile(request):
     """
     profile = Profile.objects.get(user = request.user)
     projects = Project.objects.all()
-    design = Design.objects.all()
-    usability = Usability.objects.all()
-    creativity = Creativity.objects.all()
-    content = Content.objects.all()
-
-    return render(request, 'Profile/profile.html', {'profile': profile, 'projects': projects, 'usability':usability, 'design':design, 'creativity':creativity, 'content':content })
+    return render(request, 'Profile/profile.html', {'profile': profile, 'projects': projects})
 
 
 # view function for uploading new project
@@ -103,10 +98,18 @@ def new_project(request):
 
 def single_project(request, project_id):
     """
-    function to display single project
+    function to display single project and voting citeria
     """
     # view function for single project
     projects = Project.single_project(project_id)
-    return render(request, 'Profile/single-project.html', {"projects": projects, "project_id": project_id})
+
+    # voting citeria
+
+    design = Design.objects.all()
+    usability = Usability.objects.all()
+    creativity = Creativity.objects.all()
+    content = Content.objects.all()
+
+    return render(request, 'Profile/single-project.html', {"projects": projects, "project_id": project_id, 'usability':usability, 'design':design, 'creativity':creativity, 'content':content })
 
 
