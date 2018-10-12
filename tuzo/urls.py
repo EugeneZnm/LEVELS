@@ -26,4 +26,6 @@ urlpatterns = [
 
     url(r'^login/$', auth_views.LoginView.as_view(template_name='registration/login.html'), name='login'),
 
+    url(r'^signup/$', views.signup, name='signup')
+
 ]
