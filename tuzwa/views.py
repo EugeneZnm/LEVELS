@@ -9,7 +9,7 @@ from django.contrib.auth.decorators import login_required
 from django.contrib.auth.models import User
 
 # import forms
-from .forms import SignUpForm
+from .forms import SignUpForm, EditProfileForm
 
 # importation of model classes
 from .models import Project,Profile, Design, Content, Creativity, Usability
@@ -38,3 +38,22 @@ def signup(request):
         form = SignUpForm()
 
     return render(request, 'registration/registration_form.html', {'form': form})
+
+
+# edit profile view function
+@login_required(login_url='/registration/login/')
+def profile_edit(request):
+    """
+    view function to render profile
+
+    """
+    form = EditProfileForm()
+    current_user = request.user
+    if request.method == 'POST':
+        form = EditProfileForm(request.POST, request.FILES, instance=current_user.profile)
+        if form.is_valid():
+            form.save()
+
+            return redirect('profile')
+
+    return render(request, 'Profile/profile_edit.html', {'form': form})
