@@ -17,6 +17,12 @@ from .models import Project,Profile, Design, Content, Creativity, Usability
 # Create your views here.
 
 
+# Home view function
+def Home(request):
+    projects = Project.show_projects()
+    return render(request, 'home.html', {'projects': projects})
+
+
 # SIGNUP VIEW FUNCTION
 def signup(request):
     """

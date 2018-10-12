@@ -73,6 +73,15 @@ class Project(models.Model):
         return projects
 
     @classmethod
+    def show_projects(cls):
+        """
+        method to get  all images
+        :return:
+        """
+        projects = cls.objects.all()
+        return projects
+
+    @classmethod
     def single_project(cls, project_id):
         """
         method to get projects by id
