@@ -1,10 +1,48 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-</head>
-<body>
+{% block body %}
+<style>
 
-</body>
-</html>
+.navbar .logo-section {
+  display: flex;
+  align-items: center;
+}
+.navbar .logo-section div {
+  align-self: stretch;
+  width: 2px;
+  background: black;
+  margin: 0 20px;
+}
+.navbar .logo {
+  width: 40px;
+}
+.navbar.logoname {
+  width: 130px;
+}
+</style>
+  <nav class="navbar navbar-expand-sm navbar-light bg-light">
+    <div class="container">
+      <section class="logo-section"><a href="{%url 'home'%}"><img class="logo" src="https://www.google.com/url?sa=i&rct=j&q=&esrc=s&source=images&cd=&cad=rja&uact=8&ved=2ahUKEwiVsb2-xYDeAhUFfBoKHT_NA30QjRx6BAgBEAU&url=https%3A%2F%2Fwww.cusaonline.ca%2Fabout%2Fawards%2F&psig=AOvVaw1fr159UfhPwmyrAU3cj9l3&ust=1539421243102486"/></a>&nbsp;
+      <a class="navbar-brand" href="{% url 'home' %}">TUZWA</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mainMenu" aria-controls="mainMenu" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="mainMenu" style="margin-left: 55em;">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="{% url 'profile' %}"><strong>{{ user.username }}</strong></a>
+          </li>
+            <li class="nav-item">
+            <a class="nav-link" href="{% url 'sigup' %}"><strong>Signup</strong></a>
+          </li>
+            <li class="nav-item">
+            <a class="nav-link" href="{% url 'login' %}"><strong>Login</strong></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="{% url 'logout' %}"><strong>Logout</strong></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+
+{% endblock body %}
