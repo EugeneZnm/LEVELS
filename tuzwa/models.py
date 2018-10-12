@@ -72,6 +72,15 @@ class Project(models.Model):
         projects = cls.objects.filter(id=project_id)
         return projects
 
+    @classmethod
+    def single_project(cls, project_id):
+        """
+        method to get projects by id
+        :return:
+        """
+        projects = cls.objects.filter(id=project_id)
+        return projects
+
     def delete_image(self):
         """
         method to delete image

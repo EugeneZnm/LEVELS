@@ -93,3 +93,14 @@ def new_project(request):
         upform = UploadProjectForm()
 
     return render(request, 'Profile/new_project.html', {"upform": upform})
+
+
+def single_project(request, project_id):
+    """
+    function to display single project
+    """
+    # view function for single project
+    projects = Project.single_project(project_id)
+    return render(request, 'Profile/single-project.html', {"projects": projects, "project_id": project_id})
+
+
