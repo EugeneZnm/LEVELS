@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="99ee6d4e-ac74-4c31-a0f7-11c8cebea206" name="Default Changelist" comment="" />
+    <list default="true" id="99ee6d4e-ac74-4c31-a0f7-11c8cebea206" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tuzo/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/tuzo/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tuzwa/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/tuzwa/models.py" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -12,44 +16,55 @@
     <session id="-316400363">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
+          <entry key="project.closed" value="1" />
+          <entry key="project.open.time.13" value="1" />
           <entry key="project.open.time.7" value="1" />
-          <entry key="project.opened" value="1" />
+          <entry key="project.opened" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="py" value="1" />
+          <entry key="py" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="Python" value="1" />
+          <entry key="Python" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="py" value="814" />
+          <entry key="py" value="871" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="Python" value="814" />
+          <entry key="Python" value="871" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
-    <leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/tuzwa/models.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="298">
-              <caret line="115" column="71" lean-forward="true" selection-start-line="115" selection-start-column="71" selection-end-line="115" selection-end-column="71" />
+            <state relative-caret-position="333">
+              <caret line="115" column="88" selection-start-line="115" selection-start-column="88" selection-end-line="115" selection-end-column="88" />
               <folding>
                 <element signature="e#0#28#0" expanded="true" />
-                <marker date="1539288272765" expanded="true" signature="2840:2845" ph="..." />
-                <marker date="1539288272765" expanded="true" signature="3141:3146" ph="..." />
+                <marker date="1539332137092" expanded="true" signature="2895:2900" ph="..." />
+                <marker date="1539332137092" expanded="true" signature="3196:3201" ph="..." />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/tuzo/settings.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="315">
+              <caret line="39" column="12" selection-start-line="39" selection-start-column="12" selection-end-line="39" selection-end-column="12" />
             </state>
           </provider>
         </entry>
@@ -62,14 +77,15 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
+        <option value="$PROJECT_DIR$/tuzo/settings.py" />
         <option value="$PROJECT_DIR$/tuzwa/models.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="406" />
-    <option name="y" value="32" />
-    <option name="width" value="971" />
+    <option name="x" value="324" />
+    <option name="y" value="34" />
+    <option name="width" value="1053" />
     <option name="height" value="736" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -85,6 +101,11 @@
             <path>
               <item name="AWWWARDS" type="b2602c69:ProjectViewProjectNode" />
               <item name="AWWWARDS" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="AWWWARDS" type="b2602c69:ProjectViewProjectNode" />
+              <item name="AWWWARDS" type="462c0819:PsiDirectoryNode" />
+              <item name="tuzo" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="AWWWARDS" type="b2602c69:ProjectViewProjectNode" />
@@ -123,9 +144,9 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="406" y="32" width="971" height="736" extended-state="0" />
+    <frame x="324" y="34" width="1053" height="736" extended-state="0" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.035675675" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.21946375" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Inspection Results" order="0" weight="0.34937888" />
@@ -137,7 +158,7 @@
       <window_info anchor="bottom" id="Inspection" order="6" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="7" />
       <window_info anchor="bottom" id="Version Control" order="8" show_stripe_button="false" weight="0.3275862" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="9" sideWeight="0.49772727" visible="true" weight="0.27631578" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="9" sideWeight="0.49772727" visible="true" weight="0.17105263" />
       <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.5022727" side_tool="true" weight="0.33695653" />
       <window_info anchor="bottom" id="Python Console" order="11" />
       <window_info anchor="bottom" id="Thumbnails" order="12" weight="0.32919255" />
@@ -145,21 +166,28 @@
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="R Graphics" order="3" />
-      <window_info anchor="right" id="R Packages" order="4" weight="0.32954547" />
+      <window_info anchor="right" id="R Packages" order="4" weight="0.32864866" />
     </layout>
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/tuzo/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="39" column="12" selection-start-line="39" selection-start-column="12" selection-end-line="39" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/tuzwa/models.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="298">
-          <caret line="115" column="71" lean-forward="true" selection-start-line="115" selection-start-column="71" selection-end-line="115" selection-end-column="71" />
+        <state relative-caret-position="333">
+          <caret line="115" column="88" selection-start-line="115" selection-start-column="88" selection-end-line="115" selection-end-column="88" />
           <folding>
             <element signature="e#0#28#0" expanded="true" />
-            <marker date="1539288272765" expanded="true" signature="2840:2845" ph="..." />
-            <marker date="1539288272765" expanded="true" signature="3141:3146" ph="..." />
+            <marker date="1539332137092" expanded="true" signature="2895:2900" ph="..." />
+            <marker date="1539332137092" expanded="true" signature="3196:3201" ph="..." />
           </folding>
         </state>
       </provider>

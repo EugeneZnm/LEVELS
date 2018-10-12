@@ -52,6 +52,7 @@ class Project(models.Model):
     image3 = models.ImageField(upload_to='media', blank=True)
     project_name = models.CharField(max_length=200)
     caption = models.CharField(max_length=1000)
+    description = models.CharField(max_length=2000)
     profile = models.ForeignKey(Profile, on_delete=models.CASCADE, null=True)
     user = models.ForeignKey(User , on_delete=models.CASCADE, default=True)
 
@@ -94,7 +95,7 @@ class Usability(models.Model):
     model for usability
     """
     usability_score = models.IntegerField()
-    project = models.ForeignKey(Project, on_delete=models.CASCADE, related_name='design', null=True)
+    project = models.ForeignKey(Project, on_delete=models.CASCADE, related_name='usability', null=True)
     user = models.ForeignKey(User, on_delete=models.CASCADE, null=True)
 
 
@@ -112,5 +113,5 @@ class Content(models.Model):
     model for scoring content
     """
     content_score =models.IntegerField()
-    project = models.ForeignKey(Project, on_delete=models.CASCADE, related_name='project', null=True)
+    project = models.ForeignKey(Project, on_delete=models.CASCADE, related_name='content', null=True)
     user = models.ForeignKey(User, on_delete=models.CASCADE, null=True)
