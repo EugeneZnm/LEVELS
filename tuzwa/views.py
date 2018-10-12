@@ -57,3 +57,20 @@ def profile_edit(request):
             return redirect('profile')
 
     return render(request, 'Profile/profile_edit.html', {'form': form})
+
+
+# profile view function
+@login_required(login_url='/registration/login/')
+def profile(request):
+    """
+    view function to render profile
+
+    """
+    profile = Profile.objects.get(user = request.user)
+    design = Design.objects.all()
+    usability = Usability.objects.all()
+    creativity = Creativity.objects.all()
+    content = Content.objects.all()
+
+    return render(request, 'Profile/profile.html', {'profile': profile, 'usability':usability, 'design':design, 'creativity':creativity, 'content':content })
+
