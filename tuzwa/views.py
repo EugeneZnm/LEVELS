@@ -9,7 +9,7 @@ from django.contrib.auth.decorators import login_required
 from django.contrib.auth.models import User
 
 # import forms
-from .forms import SignUpForm, EditProfileForm
+from .forms import SignUpForm, EditProfileForm, UploadProjectForm
 
 # importation of model classes
 from .models import Project,Profile, Design, Content, Creativity, Usability
@@ -67,10 +67,29 @@ def profile(request):
 
     """
     profile = Profile.objects.get(user = request.user)
+    projects = Project.objects.all()
     design = Design.objects.all()
     usability = Usability.objects.all()
     creativity = Creativity.objects.all()
     content = Content.objects.all()
 
-    return render(request, 'Profile/profile.html', {'profile': profile, 'usability':usability, 'design':design, 'creativity':creativity, 'content':content })
+    return render(request, 'Profile/profile.html', {'profile': profile, 'projects': projects, 'usability':usability, 'design':design, 'creativity':creativity, 'content':content })
 
+
+# view function for uploading new project
+@login_required(login_url='/registration/login/')
+def new_project(request):
+    current_user = request.user
+
+    if request.method == 'POST':
+        upform = UploadProjectForm(request.POST, request.FILES)
+        if upform.is_valid():
+
+            new_image = upform.save( commit=False )
+            new_image.user = current_user
+            upform.save()
+        return redirect('profile')
+    else:
+        upform = UploadProjectForm()
+
+    return render(request, 'Profile/new_project.html', {"upform": upform})

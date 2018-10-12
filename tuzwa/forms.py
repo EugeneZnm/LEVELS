@@ -30,3 +30,13 @@ class EditProfileForm(forms.ModelForm):
     class Meta:
         model = Profile
         fields = ['image', 'image2', 'image3', 'project_name', 'caption', 'description']
+
+
+# form for uploading new project
+class UploadProjectForm(forms.ModelForm):
+    """
+    form for uploading new project
+    """
+    class Meta:
+        model = Project
+        fields = ['image','image2', 'image3', 'project_name', 'caption', 'description']
