@@ -47,7 +47,7 @@ class VoteForm(forms.ModelForm):
     voting criteria
     """
     class Meta:
-        model = Project
+        model = Votes
         fields = ['design', 'usability', 'creativity', 'content']
 
 # # form for voting for  design
