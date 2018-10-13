@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 {% extends 'base.html' %}
+{% block content %}
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -25,11 +26,22 @@ body, html {
 </style>
 </head>
 <body>
-{% block content %}
-    <div class="bg">
-
+    <div class="container">
+        <div style="margin-top: 2em;">
+            {% for project in projects%}
+            <div>
+                <div class="card" style="margin-bottom: 2em; width: 600px; position: relative; left: 25%;">
+                    <div class="card-header" style="background-color: lightgrey; "><strong>{{user.username}}</strong></div>
+                    <img class="card-img-top" style="height: 500px;" src="{{ project.image.url }}" alt="card image cap">
+                    <div class="card-body">
+                        <h4 class="card-title">{{project.project_name}}</h4>
+                        <p class="card-text">{{project.caption}}</p>
+                    </div>
+                </div>
+            </div>
+             {% endfor%}
+        </div>
     </div>
-{% endblock %}
-
 </body>
 </html>
+{% endblock %}

@@ -116,7 +116,7 @@ class Votes(models.Model):
     usability= models.IntegerField()
     creativity = models.IntegerField()
     content = models.IntegerField()
-    project = models.ForeignKey(Project, on_delete=models.CASCADE, related_name='design', null=True)
+    project = models.ForeignKey(Project, on_delete=models.CASCADE, related_name='votes', null=True)
     user = models.ForeignKey(User, on_delete=models.CASCADE, null=True)
 
 

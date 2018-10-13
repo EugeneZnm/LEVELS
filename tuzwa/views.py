@@ -1,5 +1,7 @@
 from django.shortcuts import render, redirect, get_object_or_404
 
+from django.contrib.auth.forms import UserCreationForm
+
 # importing login as auth_login to prevent clashing with inbuilt view
 from django.contrib.auth import login as auth_login
 
@@ -137,7 +139,7 @@ def search_results(request):
         searched_projects = Project.search_by_project_name(search_term)
         message = f"{search_term}"
 
-        return render(request, 'Project/search.html', {"message": message, "images":searched_projects})
+        return render(request, 'search.html', {"message": message, "project":searched_projects})
     else:
         message = "Enter Project Name to search for"
-        return render(request, "Project/search.html", {"message":message})
+        return render(request, "search.html", {"message":message})
