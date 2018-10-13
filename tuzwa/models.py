@@ -91,12 +91,12 @@ class Project(models.Model):
         return projects
 
     @classmethod
-    def search_by_project_name(cls, project_name):
+    def search_by_project_name(cls, search_term):
         """
         method to search for project by name
         :return:
         """
-        project = cls.objects.filter(project_name=project_name)
+        project = cls.objects.filter(project_name=search_term)
         return project
 
     def delete_project(self):

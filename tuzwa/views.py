@@ -125,3 +125,19 @@ def votes(request, project_id):
             vote.project = projects
             vote.save()
         return redirect('profile')
+
+
+# search project
+def search_results(request):
+    """
+    function to search for projects by project name
+    """
+    if 'project' in request.GET and request.GET["project"]:
+        search_term = request.GET.get("project")
+        searched_projects = Project.search_by_project_name(search_term)
+        message = f"{search_term}"
+
+        return render(request, 'Project/search.html', {"message": message, "images":searched_projects})
+    else:
+        message = "Enter Project Name to search for"
+        return render(request, "Project/search.html", {"message":message})
