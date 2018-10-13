@@ -6,7 +6,7 @@ from django.contrib.auth.forms import UserCreationForm
 
 from django.contrib.auth.models import User
 
-from .models import Profile, Project, Design, Creativity, Content, User
+from .models import Profile, Project, Votes, User
 
 
 # signup form adding custom field
@@ -42,41 +42,49 @@ class UploadProjectForm(forms.ModelForm):
         fields = ['image','image2', 'image3', 'project_name', 'caption', 'description']
 
 
-# form for voting for  design
-class DesignForm(forms.ModelForm):
+class VoteForm(forms.ModelForm):
     """
-    Vote fon design
-    """
-    class Meta:
-        model = Design
-        fields = ['design_score']
-
-
-# voting on Usability
-class UsabilityForm(forms.ModelForm):
-    """
-    Vote fon design
+    voting criteria
     """
     class Meta:
-        model = Design
-        fields = ['usability_score']
+        model = Project
+        fields = ['design', 'usability', 'creativity', 'content']
 
-
-# voting on Usability
-class CreativityForm(forms.ModelForm):
-    """
-    Vote fon design
-    """
-    class Meta:
-        model = Design
-        fields = ['creativity_score']
-
-
-# voting on Content
-class ContentForm(forms.ModelForm):
-    """
-    Vote fon design
-    """
-    class Meta:
-        model = Design
-        fields = ['content_score']
+# # form for voting for  design
+# class DesignForm(forms.ModelForm):
+#     """
+#     Vote fon design
+#     """
+#     class Meta:
+#         model = Design
+#         fields = ['design_score']
+#
+#
+# # voting on Usability
+# class UsabilityForm(forms.ModelForm):
+#     """
+#     Vote fon design
+#     """
+#     class Meta:
+#         model = Design
+#         fields = ['usability_score']
+#
+#
+# # voting on Usability
+# class CreativityForm(forms.ModelForm):
+#     """
+#     Vote fon design
+#     """
+#     class Meta:
+#         model = Design
+#         fields = ['creativity_score']
+#
+#
+# # voting on Content
+# class ContentForm(forms.ModelForm):
+#     """
+#     Vote fon design
+#     """
+#     class Meta:
+#         model = Design
+#         fields = ['content_score']

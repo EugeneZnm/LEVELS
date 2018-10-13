@@ -8,11 +8,11 @@ from . import views
 
 urlpatterns = [
 
-url(r'^profile_edit/',views.profile_edit,name='edit_profile'),
+url(r'^profile_edit/', views.profile_edit,name='edit_profile'),
 
 url(r'^profile/', views.profile, name='profile'),
 
-url(r'^project/(d+)', views.single_project, name='single_image'),
+url(r'^project/(\d+)', views.single_project, name='single_image'),
 
 url(r'^vote/(?P<project_id>\d+)', views.votes, name='vote'),
 

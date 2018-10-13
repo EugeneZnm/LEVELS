@@ -1,10 +1,23 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-</head>
-<body>
-
-</body>
-</html>
+{% extends 'base.html'%}
+{% load bootstrap4 %}
+{% block content%}
+   {% for projects in project %}
+    <div>
+        <h1>{{project.project_name}}</h1>
+        <img src="{{projets.image.url}}">
+        <div class="row">
+            <div class="col-md-6">
+                <img src="{{projects.image2.url}}">
+            </div>
+            <div class="col-md-6">
+                <img src="{{projects.image3.url}}">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <p style="text-align: center;">{{projects.description}}</p>
+            </div>
+        </div>
+    </div>
+    {% endfor %}
+{% endblock %}
