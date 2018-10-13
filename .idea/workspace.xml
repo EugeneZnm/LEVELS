@@ -2,8 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="99ee6d4e-ac74-4c31-a0f7-11c8cebea206" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tuzo/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/tuzo/settings.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tuzwa/templates/home.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tuzwa/templates/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/tuzwa/templates/base.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -24,30 +25,30 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="html" value="26" />
+          <entry key="html" value="28" />
           <entry key="py" value="11" />
           <entry key="txt" value="3" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="HTML" value="26" />
+          <entry key="HTML" value="28" />
           <entry key="PLAIN_TEXT" value="3" />
           <entry key="Python" value="11" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="html" value="657" />
-          <entry key="py" value="4528" />
+          <entry key="html" value="743" />
+          <entry key="py" value="4533" />
           <entry key="txt" value="5" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="HTML" value="657" />
+          <entry key="HTML" value="743" />
           <entry key="PLAIN_TEXT" value="5" />
-          <entry key="Python" value="4528" />
+          <entry key="Python" value="4533" />
         </counts>
       </usages-collector>
     </session>
@@ -56,7 +57,7 @@
     <favorites_list name="AWWWARDS" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.8612585">
+    <splitter split-orientation="horizontal" split-proportion="0.46818182">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
           <file pinned="false" current-in-tab="false">
@@ -66,32 +67,6 @@
                   <caret line="55" column="70" selection-start-line="55" selection-start-column="70" selection-end-line="55" selection-end-column="70" />
                   <folding>
                     <element signature="e#0#28#0" expanded="true" />
-                    <marker date="1539422598468" expanded="true" signature="3971:3978" ph="..." />
-                    <marker date="1539422598468" expanded="true" signature="4288:4295" ph="..." />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/tuzo/urls.py">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="825">
-                  <caret line="59" column="17" selection-start-line="59" selection-start-column="17" selection-end-line="59" selection-end-column="17" />
-                  <folding>
-                    <element signature="e#638#679#0" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/tuzwa/urls.py">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="45">
-                  <caret line="9" selection-start-line="9" selection-end-line="9" />
-                  <folding>
-                    <element signature="e#0#32#0" expanded="true" />
                   </folding>
                 </state>
               </provider>
@@ -118,7 +93,7 @@
               </provider>
             </entry>
           </file>
-          <file pinned="false" current-in-tab="true">
+          <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/requirements.txt">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="300">
@@ -130,13 +105,31 @@
           <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/tuzwa/views.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="434">
+                <state relative-caret-position="1968">
                   <caret line="142" column="74" selection-start-line="142" selection-start-column="74" selection-end-line="142" selection-end-column="74" />
                   <folding>
                     <element signature="e#0#64#0" expanded="true" />
                     <marker date="1539422994247" expanded="true" signature="525:631" ph="..." />
                     <marker date="1539422994247" expanded="true" signature="3713:3718" ph="..." />
                   </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/tuzwa/templates/home.html">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="105">
+                  <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/tuzwa/templates/base.html">
+              <provider selected="true" editor-type-id="text-editor">
+                <state>
+                  <caret line="6" selection-start-line="6" selection-end-line="6" />
                 </state>
               </provider>
             </entry>
@@ -179,15 +172,15 @@
           <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/tuzwa/forms.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="630">
-                  <caret line="50" column="12" selection-start-line="50" selection-start-column="12" selection-end-line="50" selection-end-column="12" />
+                <state relative-caret-position="735">
+                  <caret line="49" column="21" selection-start-line="49" selection-start-column="21" selection-end-line="49" selection-end-column="21" />
                   <folding>
                     <element signature="e#0#24#0" expanded="true" />
-                    <marker date="1539350371051" expanded="true" signature="321:326" ph="..." />
-                    <marker date="1539350371051" expanded="true" signature="637:642" ph="..." />
-                    <marker date="1539350371051" expanded="true" signature="862:867" ph="..." />
-                    <marker date="1539350371051" expanded="true" signature="1076:1220" ph="..." />
-                    <marker date="1539350371051" expanded="true" signature="1288:1295" ph="..." />
+                    <marker date="1539426059588" expanded="true" signature="321:326" ph="..." />
+                    <marker date="1539426059588" expanded="true" signature="637:642" ph="..." />
+                    <marker date="1539426059588" expanded="true" signature="862:867" ph="..." />
+                    <marker date="1539426059588" expanded="true" signature="1076:1218" ph="..." />
+                    <marker date="1539426059588" expanded="true" signature="1286:1293" ph="..." />
                   </folding>
                 </state>
               </provider>
@@ -197,16 +190,14 @@
       </split-first>
       <split-second>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file pinned="false" current-in-tab="true">
+          <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/tuzwa/models.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="240">
-                  <caret line="16" column="10" selection-start-line="16" selection-start-column="10" selection-end-line="16" selection-end-column="10" />
+                <state relative-caret-position="413">
+                  <caret line="155" column="73" lean-forward="true" selection-start-line="122" selection-end-line="155" selection-end-column="73" />
                   <folding>
                     <element signature="e#0#28#0" expanded="true" />
-                    <marker date="1539422598468" expanded="true" signature="2580:2758" ph="..." />
-                    <marker date="1539422598468" expanded="true" signature="3971:3978" ph="..." />
-                    <marker date="1539422598468" expanded="true" signature="4288:4295" ph="..." />
+                    <marker date="1539426064456" expanded="true" signature="2580:2758" ph="..." />
                   </folding>
                 </state>
               </provider>
@@ -250,7 +241,7 @@
               </provider>
             </entry>
           </file>
-          <file pinned="false" current-in-tab="false">
+          <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/tuzwa/templates/Profile/profile_edit.html">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="255">
@@ -314,7 +305,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/tuzwa/templates/base.html" />
         <option value="$PROJECT_DIR$/tuzwa/templates/Includes/form.html" />
         <option value="$PROJECT_DIR$/tuzwa/templates/Registration/base.html" />
         <option value="$PROJECT_DIR$/tuzwa/templates/Registration/login.html" />
@@ -332,16 +322,18 @@
         <option value="$PROJECT_DIR$/tuzo/urls.py" />
         <option value="$PROJECT_DIR$/tuzwa/templates/Profile/new_project.html" />
         <option value="$PROJECT_DIR$/tuzwa/templates/Profile/profile_edit.html" />
-        <option value="$PROJECT_DIR$/tuzwa/forms.py" />
         <option value="$PROJECT_DIR$/tuzwa/templates/Profile/profile.html" />
         <option value="$PROJECT_DIR$/tuzwa/templates/Profile/single_project.html" />
         <option value="$PROJECT_DIR$/tuzwa/urls.py" />
-        <option value="$PROJECT_DIR$/tuzwa/models.py" />
         <option value="$PROJECT_DIR$/tuzwa/views.py" />
         <option value="$PROJECT_DIR$/tuzwa/templates/search.html" />
         <option value="$PROJECT_DIR$/tuzwa/templates/navbar.html" />
         <option value="$PROJECT_DIR$/tuzo/settings.py" />
         <option value="$PROJECT_DIR$/requirements.txt" />
+        <option value="$PROJECT_DIR$/tuzwa/forms.py" />
+        <option value="$PROJECT_DIR$/tuzwa/models.py" />
+        <option value="$PROJECT_DIR$/tuzwa/templates/home.html" />
+        <option value="$PROJECT_DIR$/tuzwa/templates/base.html" />
       </list>
     </option>
   </component>
@@ -424,8 +416,9 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="-4" width="1366" height="772" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4957265" visible="true" weight="0.1780303" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4957265" visible="true" weight="0.17727272" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" sideWeight="0.50427353" side_tool="true" weight="0.17993875" />
       <window_info anchor="bottom" id="Inspection Results" order="0" weight="0.34937888" />
@@ -437,7 +430,7 @@
       <window_info anchor="bottom" id="Inspection" order="6" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="7" />
       <window_info anchor="bottom" id="Version Control" order="8" show_stripe_button="false" weight="0.3275862" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="9" sideWeight="0.49772727" visible="true" weight="0.23136646" />
+      <window_info anchor="bottom" id="Terminal" order="9" sideWeight="0.49772727" visible="true" weight="0.23136646" />
       <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.5022727" side_tool="true" weight="0.33695653" />
       <window_info anchor="bottom" id="Python Console" order="11" />
       <window_info anchor="bottom" id="Thumbnails" order="12" weight="0.32919255" />
@@ -452,13 +445,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/tuzwa/templates/base.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="16" selection-start-line="4" selection-start-column="11" selection-end-line="4" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/tuzwa/templates/Includes/form.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="362">
@@ -570,21 +556,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tuzwa/forms.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="630">
-          <caret line="50" column="12" selection-start-line="50" selection-start-column="12" selection-end-line="50" selection-end-column="12" />
-          <folding>
-            <element signature="e#0#24#0" expanded="true" />
-            <marker date="1539350371051" expanded="true" signature="321:326" ph="..." />
-            <marker date="1539350371051" expanded="true" signature="637:642" ph="..." />
-            <marker date="1539350371051" expanded="true" signature="862:867" ph="..." />
-            <marker date="1539350371051" expanded="true" signature="1076:1220" ph="..." />
-            <marker date="1539350371051" expanded="true" signature="1288:1295" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/tuzwa/templates/Profile/new_project.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="30">
@@ -602,29 +573,6 @@
           <caret line="17" column="57" selection-start-line="17" selection-start-column="57" selection-end-line="17" selection-end-column="57" />
           <folding>
             <element signature="n#style#0;n#p#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tuzwa/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="434">
-          <caret line="142" column="74" selection-start-line="142" selection-start-column="74" selection-end-line="142" selection-end-column="74" />
-          <folding>
-            <element signature="e#0#64#0" expanded="true" />
-            <marker date="1539422994247" expanded="true" signature="525:631" ph="..." />
-            <marker date="1539422994247" expanded="true" signature="3713:3718" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tuzwa/templates/Profile/profile_edit.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="17" column="22" selection-start-line="17" selection-start-column="22" selection-end-line="17" selection-end-column="22" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#button#0;n#form#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -656,18 +604,6 @@
             <element signature="n#style#0;n#h5#0;n#div#0;n#div#0;n#div#0;n#li#0;n#ul#0;n#div#2;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#h5#0;n#div#1;n#div#0;n#div#0;n#li#0;n#ul#0;n#div#2;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#h5#0;n#div#2;n#div#0;n#div#0;n#li#0;n#ul#0;n#div#2;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tuzwa/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="735">
-          <caret line="55" column="70" selection-start-line="55" selection-start-column="70" selection-end-line="55" selection-end-column="70" />
-          <folding>
-            <element signature="e#0#28#0" expanded="true" />
-            <marker date="1539422598468" expanded="true" signature="3971:3978" ph="..." />
-            <marker date="1539422598468" expanded="true" signature="4288:4295" ph="..." />
           </folding>
         </state>
       </provider>
@@ -714,6 +650,68 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="300">
           <caret line="20" column="13" selection-start-line="20" selection-start-column="13" selection-end-line="20" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tuzwa/forms.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="735">
+          <caret line="49" column="21" selection-start-line="49" selection-start-column="21" selection-end-line="49" selection-end-column="21" />
+          <folding>
+            <element signature="e#0#24#0" expanded="true" />
+            <marker date="1539426059588" expanded="true" signature="321:326" ph="..." />
+            <marker date="1539426059588" expanded="true" signature="637:642" ph="..." />
+            <marker date="1539426059588" expanded="true" signature="862:867" ph="..." />
+            <marker date="1539426059588" expanded="true" signature="1076:1218" ph="..." />
+            <marker date="1539426059588" expanded="true" signature="1286:1293" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tuzwa/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1968">
+          <caret line="142" column="74" selection-start-line="142" selection-start-column="74" selection-end-line="142" selection-end-column="74" />
+          <folding>
+            <element signature="e#0#64#0" expanded="true" />
+            <marker date="1539422994247" expanded="true" signature="525:631" ph="..." />
+            <marker date="1539422994247" expanded="true" signature="3713:3718" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tuzwa/templates/home.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tuzwa/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="735">
+          <caret line="55" column="70" selection-start-line="55" selection-start-column="70" selection-end-line="55" selection-end-column="70" />
+          <folding>
+            <element signature="e#0#28#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tuzwa/templates/Profile/profile_edit.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="17" column="22" selection-start-line="17" selection-start-column="22" selection-end-line="17" selection-end-column="22" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#button#0;n#form#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tuzwa/templates/base.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret line="6" selection-start-line="6" selection-end-line="6" />
         </state>
       </provider>
     </entry>
