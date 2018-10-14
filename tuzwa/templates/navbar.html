@@ -23,18 +23,27 @@
             </form>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
           &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
             <ul class="navbar-nav">
+                {% if not current_user.is_authenticated %}
               <li class="nav-item active">
                 <a class="nav-link" href="{% url 'profile' %}"><strong>{{ user.username }}</strong></a>
               </li>&nbsp;
-              <li class="nav-item active">
+                <li class="nav-item active">
+                  <a class="nav-link" href="{% url 'edit_profile' %}"><strong>Edit Profile</strong></a>
+              </li>&nbsp;&nbsp;
+                <li class="nav-item active">
+                  <a class="nav-link" href="{% url 'new_project' %}"><strong>SUBMIT SITE</strong></a>
+              </li>&nbsp;&nbsp;
+                <li class="nav-item active">
                   <a class="nav-link" href="{% url 'logout' %}"><strong>Logout</strong></a>
-              </li>&nbsp;
+              </li>
+                {% else %}&nbsp;
               <li class="nav-item active">
                   <a class="nav-link" href="{% url 'signup' %}"><strong>Signup</strong></a>
               </li>&nbsp;
               <li class="nav-item active">
                   <a class="nav-link" href="{% url 'login' %}"><strong>Login</strong></a>
               </li>
+                {% endif %}
             </ul>
         </div>
     </div>

@@ -72,8 +72,9 @@ def profile(request):
     view function to render profile
 
     """
+    current_user = request.user
     profile = Profile.objects.get(user = request.user)
-    projects = Project.objects.all()
+    projects = Project.objects.filter(user = current_user)
     return render(request, 'Profile/profile.html', {'profile': profile, 'projects': projects})
 
 

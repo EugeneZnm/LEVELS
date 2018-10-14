@@ -25,20 +25,34 @@ body, html {
 }
 </style>
 </head>
-<body>
-    <div class="container">
-        <div style="margin-top: 2em;">
+<body >
+    <div>
+        <img src="">
+    </div>
+    <div class="col-xs-8 col-sm-8 col-md-8 col-lg-12">
+        <div  class="row" style="margin-top: 2em;">
             {% for project in projects%}
-            <div>
-                <div class="card" style="margin-bottom: 2em; width: 600px; position: relative; left: 25%;">
-                    <div class="card-header" style="background-color: lightgrey; "><strong>{{user.username}}</strong></div>
-                    <img class="card-img-top" style="height: 500px;" src="{{ project.image.url }}" alt="card image cap">
-                    <div class="card-body">
-                        <h4 class="card-title">{{project.project_name}}</h4>
-                        <p class="card-text">{{project.caption}}</p>
+            <ul style="margin-left: 6.5em; margin-top: 1em;">
+                <li style="display:inline;">
+                    <div class="card" style="margin-bottom: 2em; width: 600px; position: relative; left: 25%;">
+                        <h5 class="card-header" style="width:600px; text-align: center; background-color: lightgrey ;"><strong>{{project.user}}</strong></h5>
+                        <a href="/project/{{project.id}}"> <img class="card-img-top" style="height: 500px;" src="{{ project.image.url }}" alt="card image cap"></a>
+                        <div class="card-body" style="width:600px;">
+                            <div class="row" style="text-align: center;">
+                                <div class="col-md-12" >
+                                    <h5 style="text-align: center;" class="card-title">{{project.project_name}}</h5>
+                                </div>
+                                <div class="col-md-12">
+                                    <p style="text-align: center;" class="card-text">{{project.caption}}</p>
+                                </div>
+                                <div class="col-md-12">
+                                    <p style="text-align: center;" class="card-text">{{project.description}}</p>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                </div>
-            </div>
+                </li>
+            </ul>
              {% endfor%}
         </div>
     </div>

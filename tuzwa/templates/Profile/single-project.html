@@ -1,0 +1,98 @@
+{% extends 'registration/base.html'%}
+{% load bootstrap4 %}
+{% block content%}
+<style>
+    * {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f1f1f1;
+    padding: 20px;
+    font-family: Arial;
+}
+
+/* Center website */
+.main {
+    max-width: 1000px;
+    margin: auto;
+}
+
+h1 {
+    font-size: 50px;
+    word-break: break-all;
+}
+
+.row {
+    margin: 8px -16px;
+}
+
+/* Add padding BETWEEN each column (if you want) */
+.row,
+.row > .column {
+    padding: 8px;
+}
+
+/* Create four equal columns that floats next to each other */
+.column {
+    float: left;
+    width: 25%;
+}
+
+/* Clear floats after rows */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Content */
+.content {
+    background-color: white;
+    padding: 10px;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 900px) {
+    .column {
+        width: 50%;
+    }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+    .column {
+        width: 100%;
+    }
+}
+</style>
+
+   {% for project in projects %}
+
+<div class="main" style="margin-top: 1em;">
+
+    <div class="content">
+      <h3 class="card-header" style="text-align: center; width: 930px; margin-left: 0.8em; background-color: lightgrey;">{{project.project_name}}</h3>
+      <img class="card-img-top" src="{{project.image.url}}" alt="" style="width:95%; height: 400px; margin-left: 1.5em;">
+      <p class="card-footer" style="text-align: center; width: 930px; margin-left: 1.5em;">{{project.description}}</p>
+    </div>
+
+    <!-- Portfolio Gallery Grid -->
+    <div class="row" style="margin-left: 10em;">
+      <div class="column">
+        <div class="content" style="width: 300px;">
+          <img src="{{project.image2.url}}" class="card-img-top" alt="Mountains" style="width:100%">
+        </div>
+      </div>
+      <div class="column" style="margin-left: 10em;">
+        <div class="content" style="width: 300px; height:">
+          <img src="{{project.image3.url}}" class="card-img-top" alt="Lights" style="width:100%">
+        </div>
+      </div>
+    </div>
+
+<!-- END MAIN -->
+</div>
+    {% endfor %}
+
+{% endblock %}
