@@ -6,20 +6,12 @@ A Django application where users can upload their projects and have then ranked 
 
 ## User Requirements
 
-1. Sign in to the application to start using.
-2. Upload my pictures to the application.
-3. See my profile with all my pictures.
-4. Follow other users and see their pictures on my timeline.
-5. Like a picture and leave a comment on it.
-
-## Models
-### Image Model
-* Fields: Image, Image Name, caption, likes Foreign Key and Profile Foreign Key.
-
-### Profile Model
-* Fields: avatar, Bio, email, location, user, phone_number
-
-### Like and Comment models
+1. View posted projects and their details.
+2. Post a project to be rated/reviewed.
+3. View my profile page.
+4. Rate/ review other users' projects
+5. Search for projects .
+6. View projects overall score.
 
 ## Admin Dashboard
 Use django admin to post photos to the database and manage the photos
@@ -33,7 +25,7 @@ This project was created on a debian linux platform but should work on other uni
 
 ### Cloning the repository
 ```bash
-git clone https://github.com/EugeneZnm/IGCLONE.git && cd IGCLONED
+git clone https://github.com/EugeneZnm/LEVELS.git && cd LEVELS
 ```
 
 ### Creating a virtual environment
@@ -77,7 +69,7 @@ python manage.py runserver
 ```
 ## Contributing
 
-- Git clone [https://github.com/EugeneZnm/IGCLONE.git](https://github.com/EugeneZnm/IGCLONE.git) 
+- Git clone [https://github.com/EugeneZnm/LEVELS.git](https://github.com/EugeneZnm/LEVELS.git) 
 - Make the changes.
 - Write your tests.
 - If everything is OK. push your changes and make a pull request.
