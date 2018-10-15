@@ -102,6 +102,7 @@ h1 {
         <div class="col-md-3">
             {% for design in project.design.all %}
                 <li style="list-style: none;">
+                    <strong>{{design.user.username}}</strong>&nbsp;&nbsp;&nbsp;&nbsp;
                     Design:{{design.design_score}}
                 </li>
 
