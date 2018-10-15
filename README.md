@@ -81,7 +81,7 @@ Set the configuration to production mode
 ## Live Demo
 
 The web app can be accessed from the following link: 
-[IGCLONE](https://tuzwa.herokuapp.com/)
+[LEVELS](https://tuzwa.herokuapp.com/)
 
 
 ## Technology used
