@@ -25,7 +25,7 @@
           <entry key="Procfile" value="1" />
           <entry key="env" value="1" />
           <entry key="gitignore" value="1" />
-          <entry key="html" value="51" />
+          <entry key="html" value="52" />
           <entry key="md" value="1" />
           <entry key="py" value="23" />
           <entry key="txt" value="5" />
@@ -34,7 +34,7 @@
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key=".env file" value="1" />
-          <entry key="HTML" value="51" />
+          <entry key="HTML" value="52" />
           <entry key="Markdown" value="1" />
           <entry key="PLAIN_TEXT" value="7" />
           <entry key="Python" value="23" />
@@ -44,7 +44,7 @@
         <counts>
           <entry key="Procfile" value="4" />
           <entry key="env" value="6" />
-          <entry key="html" value="3150" />
+          <entry key="html" value="3160" />
           <entry key="md" value="47" />
           <entry key="py" value="5436" />
           <entry key="txt" value="5" />
@@ -53,7 +53,7 @@
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key=".env file" value="6" />
-          <entry key="HTML" value="3150" />
+          <entry key="HTML" value="3160" />
           <entry key="Markdown" value="47" />
           <entry key="PLAIN_TEXT" value="9" />
           <entry key="Python" value="5436" />
@@ -65,7 +65,7 @@
     <favorites_list name="AWWWARDS" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.26236045">
+    <splitter split-orientation="horizontal" split-proportion="0.3658147">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
           <file pinned="false" current-in-tab="false">
@@ -223,15 +223,6 @@
             </entry>
           </file>
           <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/.gitignore">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="-937">
-                  <caret line="5" column="14" selection-start-line="5" selection-start-column="14" selection-end-line="5" selection-end-column="14" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/tuzwa/templates/home.html">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="138">
@@ -252,9 +243,32 @@
             </entry>
           </file>
           <file pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/tuzwa/templates/Profile/single-project.html">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="161">
+                  <caret line="100" column="29" lean-forward="true" selection-start-line="100" selection-start-column="29" selection-end-line="100" selection-end-column="29" />
+                  <folding>
+                    <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
+                    <element signature="n#style#0;n#h3#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+                    <element signature="n#style#0;n#img#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+                    <element signature="n#style#0;n#p#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+                    <element signature="n#style#0;n#div#1;n#div#0;n#!!top" expanded="true" />
+                    <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="true" />
+                    <element signature="n#style#0;n#div#1;n#div#1;n#div#0;n#!!top" expanded="true" />
+                    <element signature="n#style#0;n#div#0;n#div#1;n#div#1;n#div#0;n#!!top" expanded="true" />
+                    <element signature="e#2611#2617#0" expanded="true" />
+                    <element signature="e#2617#2623#0" expanded="true" />
+                    <element signature="e#2623#2629#0" expanded="true" />
+                    <element signature="e#2629#2635#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/tuzo/settings.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="-2035">
+                <state relative-caret-position="-1388">
                   <caret line="26" column="5" lean-forward="true" selection-start-line="26" selection-start-column="5" selection-end-line="26" selection-end-column="5" />
                   <folding>
                     <element signature="e#306#315#0" expanded="true" />
@@ -477,7 +491,6 @@
         <option value="$PROJECT_DIR$/tuzwa/templates/Profile/profile.html" />
         <option value="$PROJECT_DIR$/tuzwa/forms.py" />
         <option value="$PROJECT_DIR$/tuzwa/urls.py" />
-        <option value="$PROJECT_DIR$/tuzwa/templates/Profile/single-project.html" />
         <option value="$PROJECT_DIR$/Procfile" />
         <option value="$PROJECT_DIR$/runtime.txt" />
         <option value="$PROJECT_DIR$/.env" />
@@ -489,14 +502,15 @@
         <option value="$PROJECT_DIR$/tuzwa/views.py" />
         <option value="$PROJECT_DIR$/tuzwa/templates/search.html" />
         <option value="$PROJECT_DIR$/tuzo/settings.py" />
+        <option value="$PROJECT_DIR$/tuzwa/templates/Profile/single-project.html" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="240" />
-    <option name="y" value="49" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="233" />
+    <option name="y" value="103" />
     <option name="width" value="947" />
-    <option name="height" value="728" />
+    <option name="height" value="700" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -531,6 +545,13 @@
               <item name="AWWWARDS" type="462c0819:PsiDirectoryNode" />
               <item name="tuzwa" type="462c0819:PsiDirectoryNode" />
               <item name="templates" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="AWWWARDS" type="b2602c69:ProjectViewProjectNode" />
+              <item name="AWWWARDS" type="462c0819:PsiDirectoryNode" />
+              <item name="tuzwa" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
+              <item name="Profile" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -573,9 +594,9 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="-4" width="1366" height="772" extended-state="6" />
+    <frame x="233" y="103" width="947" height="700" extended-state="0" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4957265" visible="true" weight="0.05" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4957265" visible="true" weight="0.0754717" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" sideWeight="0.50427353" side_tool="true" weight="0.17993875" />
       <window_info anchor="bottom" id="Inspection Results" order="0" weight="0.34937888" />
@@ -587,7 +608,7 @@
       <window_info anchor="bottom" id="Inspection" order="6" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="7" />
       <window_info anchor="bottom" id="Version Control" order="8" show_stripe_button="false" weight="0.3275862" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="9" sideWeight="0.49772727" visible="true" weight="0.32919255" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="9" sideWeight="0.49772727" visible="true" weight="0.37062937" />
       <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.5022727" side_tool="true" weight="0.33695653" />
       <window_info anchor="bottom" id="Python Console" order="11" />
       <window_info anchor="bottom" id="Thumbnails" order="12" weight="0.32919255" />
@@ -789,31 +810,6 @@
             <marker date="1539586288910" expanded="true" signature="668:673" ph="..." />
             <marker date="1539586288910" expanded="true" signature="893:898" ph="..." />
             <marker date="1539586288910" expanded="true" signature="1109:1376" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tuzwa/templates/Profile/single-project.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="95" selection-start-line="95" selection-end-line="96" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#h3#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#img#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#p#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#1;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#1;n#div#1;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#1;n#div#1;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#li#0;n#div#0;n#div#2;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#button#0;n#form#0;n#div#0;n#div#2;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#li#0;n#div#1;n#div#2;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#button#0;n#form#0;n#div#1;n#div#2;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#li#0;n#div#2;n#div#2;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#button#0;n#form#0;n#div#2;n#div#2;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#li#0;n#div#3;n#div#2;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#button#0;n#form#0;n#div#3;n#div#2;n#div#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1043,10 +1039,31 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/tuzo/settings.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2035">
+        <state relative-caret-position="-1388">
           <caret line="26" column="5" lean-forward="true" selection-start-line="26" selection-start-column="5" selection-end-line="26" selection-end-column="5" />
           <folding>
             <element signature="e#306#315#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tuzwa/templates/Profile/single-project.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="161">
+          <caret line="100" column="29" lean-forward="true" selection-start-line="100" selection-start-column="29" selection-end-line="100" selection-end-column="29" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#h3#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#img#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#p#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#1;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#1;n#div#1;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#1;n#div#1;n#div#0;n#!!top" expanded="true" />
+            <element signature="e#2611#2617#0" expanded="true" />
+            <element signature="e#2617#2623#0" expanded="true" />
+            <element signature="e#2623#2629#0" expanded="true" />
+            <element signature="e#2629#2635#0" expanded="true" />
           </folding>
         </state>
       </provider>
