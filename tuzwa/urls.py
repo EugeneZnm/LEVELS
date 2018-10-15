@@ -12,11 +12,17 @@ url(r'^profile_edit/', views.profile_edit,name='edit_profile'),
 
 url(r'^profile/', views.profile, name='profile'),
 
-url(r'^project/(\d+)', views.single_project, name='single_image'),
+url(r'^project/(\d+)$', views.single_project, name='single_image'),
 
 url(r'^new_project/', views.new_project, name='new_project'),
 
-url(r'^vote/(?P<project_id>\d+)', views.votes, name='vote'),
+url(r'^design/(?P<project_id>\d+)$', views.design, name='design'),
+
+url(r'^content/(?P<project_id>\d+)', views.content, name='content'),
+
+url(r'^creativity/(?P<project_id>\d+)', views.creativity, name='creativity'),
+
+url(r'^usability/(?P<project_id>\d+)', views.usability, name='usability'),
 
 url(r'^search/', views.search_results, name='search_results'),
 

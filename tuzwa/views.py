@@ -10,10 +10,10 @@ from django.contrib.auth.decorators import login_required
 from django.contrib.auth.models import User
 
 # import forms
-from .forms import SignUpForm, EditProfileForm, UploadProjectForm,VoteForm
+from .forms import SignUpForm, EditProfileForm,DesignForm, UsabilityForm, UploadProjectForm, CreativityForm,ContentForm
 
 # importation of model classes
-from .models import Project,Profile, Votes
+from .models import Project,Profile, Design, Usability,Creativity,Content
 # Create your views here.
 
 
@@ -105,29 +105,72 @@ def single_project(request, project_id):
     projects = Project.single_project(project_id)
 
     # voting criteria
-    vote = Votes.objects.all()
+    # designs = Design.object.all()
 
-    # design = Design.objects.all()
-    # usability = Usability.objects.all()
-    # creativity = Creativity.objects.all()
-    # content = Content.objects.all()
+    design = Design.objects.all()
+    usability = Usability.objects.all()
+    creativity = Creativity.objects.all()
+    content = Content.objects.all()
 
-    return render(request, 'Profile/single-project.html', {"projects": projects, "project_id": project_id, 'vote': vote})
+    return render(request, 'Profile/single-project.html', {"projects": projects, "project_id": project_id, "design":design, "usability":usability, "creativity":creativity, "content":content})
 
 
 # criteria voting function
 @login_required(login_url='/registration/login/')
-def votes(request, project_id):
+def design(request, project_id):
+
+    projects = get_object_or_404(Project, pk=project_id)
+    print(projects)
+    if request.method == 'POST':
+        form = DesignForm(request.POST)
+        if form.is_valid():
+            design = form.save(commit=False)
+            design.user = request.user
+            design.project = projects
+            design.save()
+        return redirect('single_image', project_id)
+
+
+@login_required(login_url='/registration/login/')
+def usability(request, project_id):
 
     projects = get_object_or_404(Project, pk=project_id)
     if request.method == 'POST':
-        form = VoteForm(request.POST)
+        form = UsabilityForm(request.POST)
         if form.is_valid():
-            vote = form.save(commit=False)
-            vote.user = request.user
-            vote.project = projects
-            vote.save()
-        return redirect('profile')
+            usability = form.save(commit=False)
+            usability.user = request.user
+            usability.project = projects
+            usability.save()
+        return redirect('single_image', project_id)
+
+
+@login_required(login_url='/registration/login/')
+def creativity(request, project_id):
+
+    projects = get_object_or_404(Project, pk=project_id)
+    if request.method == 'POST':
+        form = CreativityForm(request.POST)
+        if form.is_valid():
+            creativity = form.save(commit=False)
+            creativity.user = request.user
+            creativity.project = projects
+            creativity.save()
+        return redirect('single_image', project_id)
+
+
+@login_required(login_url='/registration/login/')
+def content(request, project_id):
+
+    projects = get_object_or_404(Project, pk=project_id)
+    if request.method == 'POST':
+        form = ContentForm(request.POST)
+        if form.is_valid():
+            content = form.save(commit=False)
+            content.user = request.user
+            content.project = projects
+            content.save()
+        return redirect('single_image', project_id)
 
 
 # search project

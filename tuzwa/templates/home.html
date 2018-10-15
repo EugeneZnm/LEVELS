@@ -26,18 +26,18 @@ body, html {
 </style>
 </head>
 <body >
-    <div>
-        <img src="">
+    <div class="col-xs-8 col-sm-8 col-md-8 col-lg-12">
+        <img style="width: 1250px;" src="/static/image/Awards-Banner-1140.jpg">
     </div>
     <div class="col-xs-8 col-sm-8 col-md-8 col-lg-12">
         <div  class="row" style="margin-top: 2em;">
             {% for project in projects%}
-            <ul style="margin-left: 6.5em; margin-top: 1em;">
+            <ul style=" margin-top: 1em;">
                 <li style="display:inline;">
-                    <div class="card" style="margin-bottom: 2em; width: 600px; position: relative; left: 25%;">
-                        <h5 class="card-header" style="width:600px; text-align: center; background-color: lightgrey ;"><strong>{{project.user}}</strong></h5>
+                    <div class="card" style="margin-bottom: 2em; width: 500px; position: relative; left: 25%;">
+                        <h5 class="card-header" style="width:500px; text-align: center; background-color: lightgrey ;"><strong>{{project.user}}</strong></h5>
                         <a href="/project/{{project.id}}"> <img class="card-img-top" style="height: 500px;" src="{{ project.image.url }}" alt="card image cap"></a>
-                        <div class="card-body" style="width:600px;">
+                        <div class="card-body" style="width:500px;">
                             <div class="row" style="text-align: center;">
                                 <div class="col-md-12" >
                                     <h5 style="text-align: center;" class="card-title">{{project.project_name}}</h5>
