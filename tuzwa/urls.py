@@ -26,7 +26,9 @@ url(r'^usability/(?P<project_id>\d+)', views.usability, name='usability'),
 
 url(r'^search/', views.search_results, name='search_results'),
 
+url(r'^api/project/$', views.Project.as_view()),
 ]
+
 
 if settings.DEBUG:
     urlpatterns += static(settings.MEDIA_URL, document_root = settings.MEDIA_ROOT)

@@ -14,6 +14,10 @@ from .forms import SignUpForm, EditProfileForm,DesignForm, UsabilityForm, Upload
 
 # importation of model classes
 from .models import Project,Profile, Design, Usability,Creativity,Content
+
+from rest_framework.response import Response
+from rest_framework.views import APIView
+from .serializer import ProjectSerializer
 # Create your views here.
 
 
@@ -187,3 +191,9 @@ def search_results(request):
     else:
         message = "Enter Project Name to search for"
         return render(request, "search.html", {"message":message})
+
+class Project(APIView):
+    def get(self,request,format=None):
+        all_projects = Project.objects.all()
+        serializers = ProjectSerializer(all_projects, many=True)
+        return Response(serializers.data)
