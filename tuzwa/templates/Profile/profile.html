@@ -5,13 +5,14 @@
     <meta charset="UTF-8">
     <title>PROFILE</title>
 </head>
-<body>
+
 
     {% block content %}
+<body style="background-color: #D1AB75;">
         <div class="col-xs-8 col-sm-8 col-md-8 col-lg-12">
-            <div class="container jumbotron " style="width: 350px;margin-top:3em; height: 350px; position: relative; background-color: cream !important;">
-                <div class="row" style="position: relative; left: 10%; top:-26%">
-                    <div class="thumbnail" style="position: relative; left: 10%;background-color: white; ">
+            <div class="container jumbotron " style="width: 350px;margin-top:3em; height: 400px; position: relative; background-color: #DCC28C !important;">
+                <div class="row" style="position: relative; left: 10%; top:-20%">
+                    <div class="thumbnail" style="position: relative; left: 10%;background-color: #F3F4D4; ">
                         {% if profile.avatar %}
                         <img  style="width: 200px; border-radius: 50%;" src="{{ profile.avatar.url }}" alt="card image cap avatar">
                         {% else %}
@@ -20,8 +21,8 @@
                          </div>
 
                         {% endif %}
-                        <div class="card-footer" style="width: 200px; background-color: white;text-align: center;">
-                            <h5 style="text-align: center; color:black; background-color: white;" class="card-title">{{user.username}}</h5>
+                        <div class="card-footer" style="width: 200px; background-color: #F3F4D4;text-align: center;">
+                            <h5 style="text-align: center; color:black; background-color: #F3F4D4;" class="card-title">{{user.username}}</h5>
                             <span style="color: black;">{{user.email}}</span><br>
                             <span style="color: black; ">{{profile.Bio}}</span><br>
                             <span style="color: black; ">{{profile.phone_number}}</span><br>
@@ -54,5 +55,5 @@
         </ul>
     {%endfor%}
 </div>
-    {% endblock %}
 </body>
+    {% endblock %}

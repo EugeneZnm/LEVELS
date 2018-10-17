@@ -26,7 +26,7 @@ url(r'^usability/(?P<project_id>\d+)', views.usability, name='usability'),
 
 url(r'^search/', views.search_results, name='search_results'),
 
-url(r'^api/project/$', views.Project.as_view()),
+# url(r'^api/project/$', views.Project.as_view()),
 ]
 
 

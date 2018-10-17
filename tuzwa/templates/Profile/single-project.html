@@ -48,7 +48,7 @@ h1 {
 
 /* Content */
 .content {
-    background-color: white;
+    background-color: #D1AB75;
     padding: 10px;
 }
 
@@ -69,87 +69,94 @@ h1 {
 
    {% for project in projects %}
 
-<div class="main" style="margin-top: 1em;">
+<div class="main" style="margin-top: 1em;background-color: #D1AB75">
 
-    <div class="content">
-      <h3 class="card-header" style="text-align: center; width: 930px; margin-left: 0.8em; background-color: lightgrey;">{{project.project_name}}</h3>
-      <img class="card-img-top" src="{{project.image.url}}" alt="" style="width:95%; height: 400px; margin-left: 1.5em;">
-      <p class="card-footer" style="text-align: center; width: 930px; margin-left: 1.5em;">{{project.description}}</p>
-    </div>
+    <div class="content" style="width: 800px;margin-left: 9em; margin-top: 2em;">
+        <div style="width: 728px;" class="content content shadow-sm p-3 mb-5 bg-white rounded">
+            <h3 class="card-header" style="text-align: center; width: 650px; margin-left: 0.8em; background-color: lightgrey;"><span style="color: white;">{{project.project_name}}</span></h3>
+          <img class="card-img-top" src="{{project.image.url}}" alt="" style="width:650px; height: 400px; margin-left: 1.5em;">
+            <p class="card-footer" style="text-align: center; width: 650px; background-color: darkgrey; margin-left: 1.5em;"><span style="color: white;">{{project.description}}</span></p>
+        </div>
+     </div>
 
     <!-- Portfolio Gallery Grid -->
     <div class="row" style="margin-left: 10em;">
       <div class="column">
-        <div class="content" style="width: 300px;">
+        <div class="content shadow-sm p-3 mb-5 bg-white rounded" style="width: 300px;">
           <img src="{{project.image2.url}}" class="card-img-top" alt="Mountains" style="width:100%">
         </div>
       </div>
       <div class="column" style="margin-left: 10em;">
-        <div class="content" style="width: 300px; height:">
+        <div class="content shadow-sm p-3 mb-5 bg-white rounded" style="width: 300px; height:">
           <img src="{{project.image3.url}}" class="card-img-top" alt="Lights" style="width:100%">
         </div>
       </div>
     </div>
     <div class="row">
-        <div class="col-md-2">
-            {% for design in project.design.all%}
-            <strong>{{design.user.username}}</strong>
-            {% endfor %}
-
-        </div>
-        <div class="col-md-10">
-            <div class="row">
         <div class="col-md-3">
             {% for design in project.design.all %}
-                <li style="list-style: none;">
+            <div class="shadow-sm p-3 mb-5 bg-info rounded">
+                <li style="color: white;list-style: none;">
                     <strong>{{design.user.username}}</strong>&nbsp;&nbsp;&nbsp;&nbsp;
                     Design:{{design.design_score}}
                 </li>
+            </div>
 
             {% endfor%}
             <form action="{% url 'design' project_id=project.id %}" novalidate="'novalidate" method="post">
                 {% csrf_token %}
                 <input class="add-design" name="design_score" id="design{{project.id}}" type="number" placeholder="Vote on design....">
-                <button type="submit" class="btn btn-default" style="margin-left: 0em;">Design</button>
+                <button type="submit" class="btn btn-success" style="margin-left: 0em;">Design</button>
             </form>
         </div>
         <div class="col-md-3">
+
             {% for content in project.content.all %}
-                <li style="list-style: none;">
-                    Content:{{content.content_score}}
-                </li>
+                <div class="shadow-sm p-3 mb-5 bg-info rounded">
+                    <li style="list-style: none; color: white;">
+                        Content:{{content.content_score}}
+                    </li>
+                </div>
 
             {% endfor%}
+
             <form action="{% url 'content' project_id=project.id %}"  novalidate="'novalidate" method="post">
                 {% csrf_token %}
                 <input class="add-content" name="content_score" id="content{{project.id}}" type="number" placeholder="Vote on content....">
-                <button type="submit" class="btn btn-default" style="margin-left: 0em;">Content</button>
+                <button type="submit" class="btn btn-success" style="margin-left: 0em;">Content</button>
             </form>
         </div>
        <div class="col-md-3">
+
             {% for creativity in project.creativity.all %}
-                <li style="list-style: none;">
+                  <div class="shadow-sm p-3 mb-5 bg-info rounded">
+                <li style="color: white;list-style: none;">
                     Creativity:{{creativity.creativity_score}}
                 </li>
-
+                    </div>
             {% endfor%}
+
             <form action="{% url 'creativity' project_id=project.id %}"  novalidate="'novalidate" method="post">
                 {% csrf_token %}
                 <input class="add-creativity" name="creativity_score" id="creativity{{project.id}}" type="text" placeholder="Vote on content....">
-                <button type="submit" class="btn btn-default" style="margin-left: 0em;">Creativity</button>
+                <button type="submit" class="btn btn-success" style="margin-left: 0em;">Creativity</button>
             </form>
         </div>
         <div class="col-md-3">
+
             {% for usability in project.usability.all %}
-                <li style="list-style: none;">
-                    Usability:{{usability.usability_score}}
-                </li>
+                <div class="shadow-sm p-3 mb-5 bg-info rounded" >
+                    <li style="color: white;list-style: none;">
+                        Usability:{{usability.usability_score}}
+                    </li>
+                </div>
 
             {% endfor%}
+
             <form action="{% url 'usability' project_id=project.id %}"  novalidate="'novalidate" method="post">
                 {% csrf_token %}
                 <input class="add-usability" name="usability_score" id="usability{{project.id}}" type="text" placeholder="Vote on content....">
-                <button type="submit" class="btn btn-default" style="margin-left: 0em;">Usability</button>
+                <button type="submit" class="btn btn-success" style="margin-left: 0em;">Usability</button>
             </form>
         </div>
             </div>

@@ -13,6 +13,9 @@ A Django application where users can upload their projects and have then ranked 
 5. Search for projects .
 6. View projects overall score.
 
+## Admin Dashboard
+
+ Use django admin to post photos to the database and manage the photos
 ## Setup
 
 ### Requirements

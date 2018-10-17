@@ -25,7 +25,7 @@ body, html {
 }
 </style>
 </head>
-<body >
+<body style="background-color: #D1AB75;">
     <div class="col-xs-8 col-sm-8 col-md-8 col-lg-12">
         <img style="width: 1300px;" src="/static/image/Awards-Banner-1140.jpg">
     </div>
@@ -37,16 +37,16 @@ body, html {
                     <div class="card" style="margin-bottom: 2em; width: 500px; position: relative; left: 25%;">
                         <h5 class="card-header" style="width:500px; text-align: center; background-color: lightgrey ;"><strong>{{project.user}}</strong></h5>
                         <a href="/project/{{project.id}}"> <img class="card-img-top" style="height: 500px;" src="{{ project.image.url }}" alt="card image cap"></a>
-                        <div class="card-body" style="width:500px;">
+                        <div class="card-body" style="width:500px; background-color: darkgrey; color: white;">
                             <div class="row" style="text-align: center;">
                                 <div class="col-md-12" >
-                                    <h5 style="text-align: center;" class="card-title">{{project.project_name}}</h5>
+                                    <h5 style="text-align: center; color: white;" class="card-title">{{project.project_name}}</h5>
                                 </div>
                                 <div class="col-md-12">
                                     <p style="text-align: center;" class="card-text">{{project.caption}}</p>
                                 </div>
                                 <div class="col-md-12">
-                                    <p style="text-align: center;" class="card-text">{{project.description}}</p>
+                                    <p style="text-align: center; " class="card-text">{{project.description}}</p>
                                 </div>
                             </div>
                         </div>
