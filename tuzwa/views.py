@@ -9,6 +9,8 @@ from django.contrib.auth.decorators import login_required
 
 from django.contrib.auth.models import User
 
+from rest_framework import status
+
 # import forms
 from .forms import SignUpForm, EditProfileForm,DesignForm, UsabilityForm, UploadProjectForm, CreativityForm,ContentForm
 
@@ -17,14 +19,14 @@ from .models import Project,Profile, Design, Usability,Creativity,Content
 
 from rest_framework.response import Response
 from rest_framework.views import APIView
-from .serializer import ProjectSerializer
+from .serializer import ProjectSerializer, ProfileSerializer
 # Create your views here.
 
 
 # Home view function
-def Home(request):
-    projects = Project.show_projects()
-    return render(request, 'home.html', {'projects': projects})
+def home(request):
+    projects = Project.objects.all()
+    return render(request, 'home.html', locals())
 
 
 # SIGNUP VIEW FUNCTION
@@ -192,8 +194,32 @@ def search_results(request):
         message = "Enter Project Name to search for"
         return render(request, "search.html", {"message":message})
 #
-# class Project(APIView):
-#     def get(self,request,format=None):
-#         all_projects = Project.objects.all()
-#         serializers = ProjectSerializer(all_projects, many=True)
-#         return Response(serializers.data)
+class ApiProject(APIView):
+    def get(self,request,format=None):
+        all_projects = Project.objects.all()
+        serializers = ProjectSerializer(all_projects, many=True)
+        return Response(serializers.data)
+
+class PostApiProject(APIView):
+
+    def post(self, request, format=None):
+        serializers = ProjectSerializer(data=request.data)
+        if serializers.is_valid():
+            serializers.save()
+            return Response(serializers.data, status=status.HTTP_201_CREATED)
+        return Response(serializers.errors, status=status.HTTP_400_BAD_REQUEST)            
+
+class ApiProfile(APIView):
+    def get(self,request,format=None):
+        all_profiles = Profile.objects.all()
+        serializers = ProfileSerializer(all_profiles, many=True)
+        return Response(serializers.data)
+
+class PostApiProfile(APIView):
+    
+    def post(self, request, format=None):
+        serializers = ProfileSerializer(data=request.data)
+        if serializers.is_valid():
+            serializers.save()
+            return Response(serializers.data, status=status.HTTP_201_CREATED)
+        return Response(serializers.errors, status=status.HTTP_400_BAD_REQUEST)         

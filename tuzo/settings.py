@@ -72,6 +72,7 @@ INSTALLED_APPS = [
     'crispy_forms',
     'widget_tweaks',
     'rest_framework',
+    'rest_framework.authtoken',
 ]
 
 CRISPY_TEMPLATE_PACK = 'bootstrap4'
@@ -107,7 +108,11 @@ TEMPLATES = [
 
 WSGI_APPLICATION = 'tuzo.wsgi.application'
 
-
+REST_FRAMEWORK = {
+    'DEFAULT_AUTHENTICATION_CLASSES': (
+        'rest_framework.authentication.TokenAuthentication',
+    )
+}
 # Database
 # https://docs.djangoproject.com/en/1.11/ref/settings/#databases
 
@@ -159,9 +164,9 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 
-STATICFILES_DIRS = (
-    os.path.join(BASE_DIR,'staticfiles'),
-)
+# STATICFILES_DIRS = (
+    # os.path.join(BASE_DIR,'staticfiles'),
+# )
 
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'

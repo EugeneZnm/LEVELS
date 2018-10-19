@@ -24,7 +24,7 @@ urlpatterns = [
 
     url(r'', include('tuzwa.urls')),
 
-    url(r'^$', views.Home, name='home'),
+    url(r'^$', views.home, name='home'),
 
     url(r'^login/$', auth_views.LoginView.as_view(template_name='registration/login.html'), name='login'),
 

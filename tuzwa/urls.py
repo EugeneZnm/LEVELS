@@ -1,7 +1,7 @@
 from django.conf.urls import url
 
 from django.contrib import admin
-
+from rest_framework.authtoken.views import obtain_auth_token
 from django.conf import settings
 from django.conf.urls.static import static
 from . import views
@@ -26,7 +26,15 @@ url(r'^usability/(?P<project_id>\d+)', views.usability, name='usability'),
 
 url(r'^search/', views.search_results, name='search_results'),
 
-# url(r'^api/project/$', views.Project.as_view()),
+url(r'^api/project/$', views.ApiProject.as_view()),
+
+url(r'^api/project/post/$', views.PostApiProject.as_view()),
+
+url(r'^api/profile/$', views.ApiProfile.as_view()),
+
+url(r'^api/profile/post/$', views.PostApiProfile.as_view()),
+
+url(r'^api-token-auth/', obtain_auth_token),
 ]
 
 
